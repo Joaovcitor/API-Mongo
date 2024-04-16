@@ -1,5 +1,9 @@
 const Login = require("../models/LoginModel");
 
+exports.index = async (req, res) => {
+  res.json("Tela de login")
+}
+
 exports.register = async (req, res) => {
   try {
     const login = new Login(req.body);
