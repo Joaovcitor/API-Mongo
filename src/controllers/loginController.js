@@ -1,8 +1,8 @@
 const Login = require("../models/LoginModel");
 
 exports.index = async (req, res) => {
-  res.json("Tela de login")
-}
+  res.json("Tela de login alterada");
+};
 
 exports.register = async (req, res) => {
   try {
@@ -50,7 +50,7 @@ exports.login = async (req, res) => {
   }
 };
 
-exports.logout = function(req, res) {
+exports.logout = function (req, res) {
   req.session.destroy();
-  res.redirect('/')
-}
+  res.redirect("/");
+};
